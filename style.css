@@ -1,0 +1,494 @@
+:root {
+  --light-color: #ebecfe;
+  --dark-color: #6d71f9;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn.light {
+  padding: 9px 54px;
+  border-radius: 8px;
+  background: var(--light-color);
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 16px 0;
+  z-index: 100;
+  transition: all 500ms ease;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /* gap: 60px; */
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 1100px;
+  width: 100%;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 100px 20px;
+  /* background-color: #f0f4ff; */
+  color: #1c295d;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.hero-section p {
+  font: 16px;
+  max-width: 767px;
+  margin: 0 auto 30px;
+  color: #7f90d7;
+}
+
+.btn.getStarted {
+  padding: 19px 63px;
+  border-radius: 8px;
+  background-color: var(--dark-color);
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 300ms ease;
+}
+
+.laptop-section {
+  padding-top: 100px;
+  height: 683px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.laptop-section img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+/* Benefit Section */
+section {
+  margin-top: 150px;
+}
+
+.benefits-section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  /* left: 400px; */
+}
+
+.benefits-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.benefits-section p {
+  font-size: 16px;
+  max-width: 767px;
+  line-height: 1.6;
+  margin: 20px auto;
+  color: #7f90d7;
+}
+
+.benefit-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 70px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 224px;
+}
+
+.card img {
+  height: 157px;
+  width: 224px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #1c295d;
+}
+
+.card p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 12px;
+  margin-top: 5px;
+  color: #7f90d7;
+  width: 100%;
+}
+/* Appoinment section */
+.appoinment-section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.appoinment-section .left img {
+  height: 480px;
+  width: 638px;
+}
+
+.appoinment-section .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appoinment-section .right h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.appoinment-section .right p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #7f90d7;
+}
+
+/* Appoinment section 2nd one */
+.appoinment-section-2 {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: #f7f7fd;
+}
+
+.appoinment-section-2 .right img {
+  height: 480px;
+  width: 638px;
+}
+
+.appoinment-section-2 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.appoinment-section-2 .left h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.appoinment-section-2 .left p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #7f90d7;
+}
+/* Specialist sectiopn */
+.specialist-section {
+  /* padding: 20px 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.specialist-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.specialist-section p {
+  font-size: 16px;
+  max-width: 767px;
+  line-height: 1.6;
+  margin: 20px auto;
+  color: #7f90d7;
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.specialist-card {
+  background-color: #f7f7fd;
+  border-radius: 5px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  text-align: center;
+  padding: 8px;
+}
+
+.specialist-card img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.specialist-info h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+  color: #1c295d;
+}
+
+.specialist-info p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #7f90d7;
+  margin: 0;
+}
+
+/* Appoinment Section */
+.appoinment-section-3 {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: #f7f7fd;
+}
+
+.appoinment-section-3 .left img {
+  height: 480px;
+  width: 638px;
+}
+
+.appoinment-section-3 .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appoinment-section-3 .right h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.appoinment-section-3 .right p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #7f90d7;
+}
+
+.available-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-left: 150px;
+}
+
+.available-section .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.available-section .left h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c295d;
+}
+
+.available-section .left p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #7f90d7;
+}
+
+.available-section .left .download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.available-section .left .download-button .app-button {
+  display: flex;
+  background-color: #1c295d;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 150px;
+  min-height: 60px;
+  border-radius: 8px;
+}
+
+.get-started-section {
+  margin: 50px 50px 150 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #1c295d;
+  padding: 50px 20px;
+}
+
+.get-started-section h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 50px;
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.footer-section .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+}
+
+.footer-section .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-section .footer-content li {
+  font-size: 14px;
+  color: #7f90d7;
+  cursor: pointer;
+}
+
+.footer-section .brand img {
+  height: 40px;
+}
+
+.footer-section .brand span {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #7f90d7;
+  margin-top: 10px;
+}
