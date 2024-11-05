@@ -123,6 +123,22 @@ nav ul li a {
   height: auto;
   position: absolute;
 }
+
+.card,
+.benefit-cards {
+  transition: all 0.3s ease;
+}
+.appoinment-section,
+.appoinment-section-2,
+.appoinment-section-3,
+.available-section,
+.get-started-section {
+  transition: all 0.3s ease;
+}
+img {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
 /* Benefit Section */
 section {
   margin-top: 20px;
@@ -135,7 +151,6 @@ section {
   align-items: center;
   text-align: center;
   width: 100%;
-  /* left: 400px; */
 }
 
 .benefits-section h2 {
@@ -201,6 +216,7 @@ section {
   align-items: center;
   gap: 80px;
   margin: 0 5px;
+  padding: 20px;
 }
 
 .appoinment-section .left img {
@@ -235,6 +251,7 @@ section {
   margin: 150px 5px;
   display: flex;
   align-items: center;
+  padding: 20px;
   gap: 80px;
   background-color: #f7f7fd;
 }
@@ -334,6 +351,7 @@ section {
 .appoinment-section-3 {
   display: flex;
   align-items: center;
+  padding: 20px;
   gap: 80px;
   margin: 0 5px;
   background-color: #f7f7fd;
@@ -367,18 +385,17 @@ section {
 }
 
 .available-section {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 100px;
-  margin-left: 150px;
+  margin: 50px 50px;
 }
 
 .available-section .left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 50px;
+  margin: 50px 10px;
 }
 
 .available-section .left h2 {
@@ -493,4 +510,104 @@ footer {
   font-size: 12px;
   color: #7f90d7;
   margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+  .laptop-section img {
+    padding: 10px 10px;
+  }
+  .benefit-cards {
+    align-items: stretch;
+  }
+
+  .card {
+    width: 180px;
+    align-items: stretch;
+  }
+  .appoinment-section {
+    gap: 20px;
+  }
+
+  .appoinment-section-2 {
+    gap: 20px;
+  }
+
+  .available-section {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 220px;
+    align-items: stretch;
+  }
+  .appoinment-section {
+    flex-direction: column;
+  }
+  .appoinment-section-2 {
+    flex-direction: column;
+  }
+  .appoinment-section-3 {
+    flex-direction: column;
+  }
+
+  .available-section {
+    gap: 0px;
+    margin: 5px 5px;
+  }
+
+  .available-section .left {
+    margin: 0;
+  }
+
+  .available-section .right {
+    width: auto;
+  }
+
+  .available-section .right img {
+    width: 420px;
+  }
+  .get-started-section {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .benefit-cards {
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .appoinment-section .left img {
+    height: 280px;
+    width: 400px;
+  }
+  .appoinment-section-2 .right img {
+    height: 280px;
+    width: 400px;
+  }
+  .appoinment-section-3 .left img {
+    height: 280px;
+    width: 400px;
+  }
+  .available-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
