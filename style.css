@@ -265,7 +265,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 50px;
+  margin-left: 0 5px;
 }
 
 .appoinment-section-2 .left h2 {
@@ -578,6 +578,9 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .wrapper {
+    margin: 2px 2px;
+  }
   .benefit-cards {
     display: flex;
     /* grid-template-columns: 1fr; */
@@ -609,5 +612,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .section-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
